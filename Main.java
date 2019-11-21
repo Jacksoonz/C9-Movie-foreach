@@ -20,7 +20,7 @@ public class Main
         Movie spirit  = new Movie("Spirited Away", "Ghibli", 8.6, 2003);
         Movie howel   = new Movie("Howl's Moving Castle", "Ghibli", 8.2, 2005);
         Movie ponyo   = new Movie("Ponyo", "Ghibli", 7.7, 2009);
-        Movie marnie  = new Movie(" When Marnie Was There", "Ghibli", 7.7, 2014);
+        Movie marnie  = new Movie("When Marnie Was There", "Ghibli", 7.7, 2014);
         
         Movie april   = new Movie("April and the Extraordinary World", "Indy", 7.3, 2015);
         Movie kubo    = new Movie("Kubo and the two strings", "Indy", 7.8,  2016);
@@ -31,6 +31,19 @@ public class Main
         Movie[][] mB = { {moana, frozen, bh6}, {spirit, howel, ponyo, marnie}, { april, kubo, anastasia, spider}};
         ArrayList<Movie> mC = new ArrayList<Movie>( Arrays.asList(mA));
         
+        for (Movie a : mA){
+            System.out.println(a.getName());
+        }
+        System.out.println("\n\n");
+        for (Movie [] b : mB){
+            for (Movie c : b){
+                System.out.println(c.getName());
+            }
+        }
+        System.out.println("\n\n");
+        for (Movie d : mC){
+            System.out.println(d.getName());
+        }
     }// END psvm
         
 } // END class Main
